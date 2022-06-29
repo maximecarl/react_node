@@ -1,7 +1,7 @@
 import StatiticsNumberCard from '../components/statistics/StatisticsNumberCard';
 import Base from './Base';
 
-const Statistics = (props) => {
+const StatisticsPage = (props) => {
     return (
         <Base title='Statistics'>
             <section className="app_grid">
@@ -42,4 +42,4 @@ const Statistics = (props) => {
     )
 }
 
-export default Statistics;
+export default StatisticsPage;

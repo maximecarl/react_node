@@ -4,17 +4,25 @@ import {
     useMatch,
     useResolvedPath 
 } from "react-router-dom";
+import icon_site from '../assets/images/icon_site.png';
 
 const Layout = () => {
     return (
         <>
             <aside className="app_menu">
-                <img width="50px" height="50px" alt=""/>
+                <Link to='/' className="noPadding">
+                    <img width="50px" height="50px" src={icon_site} alt=""/>
+                </Link>
                 <nav role="navigation" className="app_menu-links">
                     <ul>
                         <li>
                             <MenuLink to="/">
                                 <i className="fa fa-home"></i>
+                            </MenuLink>
+                        </li>
+                        <li>
+                            <MenuLink to="/conversation">
+                                <i className="fa fa-comment"></i>
                             </MenuLink>
                         </li>
                         <li>

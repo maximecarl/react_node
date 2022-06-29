@@ -1,9 +1,10 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from './pages/Layout';
-import Home from './pages/Home';
-import Statistics from './pages/Statistics';
+import HomePage from './pages/HomePage';
+import StatisticsPage from './pages/StatisticsPage';
 import NoPage from './pages/NoPage';
+import ConversationPage from './pages/ConversationPage';
 
 function App() {
   return (
@@ -11,8 +12,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="stats" element={<Statistics />} />
+            <Route index element={<HomePage />} />
+            <Route path="conversation" element={<ConversationPage />} />
+            <Route path="stats" element={<StatisticsPage />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
